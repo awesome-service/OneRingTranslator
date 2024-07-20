@@ -6,23 +6,15 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        message: [
-          "git clone --recurse-submodules https://github.com/awesome-service/OneRingTranslator",
-        ],
-      },
-    },
-    {
-      method: "shell.run",
-      params: {
         venv: ENV_PATH, // Edit this to customize the venv folder path
-        path: `app/${APP_NAME}`,
+        path: APP_NAME,
         message: ["pip install -r requirements.txt"],
       },
     },
     {
       method: "fs.link",
       params: {
-        path: `app/${APP_NAME}`,
+        path: APP_NAME,
       },
     },
 
