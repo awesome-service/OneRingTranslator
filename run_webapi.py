@@ -9,8 +9,19 @@ from starlette.staticfiles import StaticFiles
 from oneringcore import OneRingCore, version
 
 import asyncio
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 webapi_version = "2.1"
 
