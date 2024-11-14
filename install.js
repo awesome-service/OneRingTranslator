@@ -1,4 +1,4 @@
-const APP_NAME = "OneRingTranslator";
+const APP_NAME = "";
 const ENV_PATH = "env";
 
 module.exports = {
