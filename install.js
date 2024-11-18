@@ -1,20 +1,20 @@
 const APP_NAME = "";
 const ENV_PATH = "env";
 
-module.exports = {
+module.exports = ({ appName = APP_NAME }) => ({
   run: [
     {
       method: "shell.run",
       params: {
         venv: ENV_PATH, // Edit this to customize the venv folder path
-        path: APP_NAME,
+        path: appName,
         message: ["pip install -r requirements.txt"],
       },
     },
     {
       method: "fs.link",
       params: {
-        path: APP_NAME,
+        path: appName,
       },
     },
 
@@ -28,8 +28,8 @@ module.exports = {
     {
       method: "notify",
       params: {
-        html: `Click the 'start ${APP_NAME}' tab to get started!`,
+        html: `Click the 'start ${appName}' tab to get started!`,
       },
     },
   ],
-};
+});
