@@ -66,8 +66,18 @@ Higher is better, no_translate2 can be used as baseline. Average on 100 examples
 | vsegpt_chat mistralai/mixtral-8x7b-instruct                                  |      88.45 |       87.2 |      86.94 | 87.85     |
 | vsegpt_chat lizpreciatior/lzlv-70b-fp16-hf                                   |      88.69 |      87.17 |      86.91 | 88.15     |
 | multi_sources vsegpt_chat:lizpreciatior/lzlv-70b-fp16-hf,fb_nllb_ctranslate2 |      89.14 |      88.22 |      87.22 | 89.87     |
+| vsegpt_chat OMF-R-Vikhr-Nemo-12B-Instruct-R-21-09-24                         |      ----- |      ----- |      ----- |      87.93|
 | google_translate                                                             |  **89.69** |      88.9  |      87.53 | 89.63     |
 | deepl                                                                        |      89.39 |      89.27 |  **87.93** | 89.82     |
+| vsegpt_chat google/gemma-2-27b-it                                            |      ----- |      ----- |      ----- |      89.07|
+| vsegpt_chat google/gemma-2-9b-it                                             |      ----- |      ----- |      ----- |      88.32|
+| vsegpt_chat meta-llama/llama-3.1-405b-instruct                               |      ----- |      ----- |      ----- |      89.72|
+| vsegpt_chat meta-llama/llama-3.1-70b-instruct                                |      ----- |      ----- |      ----- |      89.93|
+| vsegpt_chat meta-llama/llama-3.1-8b-instruct                                 |      ----- |      ----- |      ----- |      86.98|
+| vsegpt_chat meta-llama/llama-3-70b-instruct                                  |      ----- |      ----- |      ----- |      88.84|
+| multi_sources google_translate,vsegpt_chat:meta-llama/llama-3.1-70b-instruct |      ----- |      ----- |      ----- |      90.35|
+| vsegpt_chat openai/gpt-4o-mini                                               |      89.38 |      88.45 |      87.31 |      89.55|
+| vsegpt_chat cot_openai/gpt-4o-mini                                           |      ----- |      ----- |      ----- |      88.93|
 | vsegpt_chat anthropic/claude-instant-v1                                      |      ----- |      ----- |      85.73 | 88.13     |
 | vsegpt_chat openai/gpt-3.5-turbo                                             |      ----- |      ----- |      86.87 | 88.76     |
 | vsegpt_chat openai/gpt-3.5-turbo-instruct                                    |      ----- |      ----- | 85.23      | 87.46     |
@@ -77,14 +87,21 @@ Higher is better, no_translate2 can be used as baseline. Average on 100 examples
 | vsegpt_chat openai/gpt-4o                                                    |      ----- |      ----- |      ----- | 90.06     |
 | vsegpt_chat cohere/command-r-plus                                            |      ----- |      ----- |      ----- | 89.45     |
 | vsegpt_chat qwen/qwen-2-72b-instruct                                         |      ----- |      ----- |      ----- | 89.38     |
+| vsegpt_chat qwen/qwen-2.5-72b-instruct                                       |      ----- |      ----- |      ----- |      87.85|
 | vsegpt_chat nvidia/nemotron-4-340b-instruct                                  |      ----- |      ----- |      ----- | 90.07     |
 | vsegpt_chat anthropic/claude-2                                               |      89.27 |      89.17 |      87.47 | 89.85     |
 | vsegpt_chat anthropic/claude-3-haiku                                         |      ----- |      ----- |      ----- | 89.5      |
+| vsegpt_chat anthropic/claude-3-5-haiku                                       |      ----- |      ----- |      ----- | 89.64     |
 | vsegpt_chat anthropic/claude-3-sonnet                                        |      ----- |      ----- |      ----- | 89.49     |
 | vsegpt_chat anthropic/claude-3-opus                                          |      ----- |      ----- |      ----- | 90.75     |
-| vsegpt_chat anthropic/claude-3.5-sonnet                                      |      ----- |      ----- |      ----- | 90.78     |
+| vsegpt_chat anthropic/claude-3.5-sonnet-20240620                             |      ----- |      ----- |      ----- | 90.78     |
+| vsegpt_chat anthropic/claude-3.5-sonnet-20241022                             |      ----- |      ----- |      ----- | 90.62     |
+| vsegpt_chat cot_anthropic/claude-3.5-sonnet                                  |      ----- |      ----- |      ----- |      89.94|
+| vsegpt_chat google/gemini-flash-1.5-8b                                       |      ----- |      ----- |      ----- | 88.34     |
 | vsegpt_chat google/gemini-flash-1.5                                          |      ----- |      ----- |      ----- | 89.27     |
 | vsegpt_chat google/gemini-pro                                                |      ----- |      ----- |      ----- | 89.69     |
+| vsegpt_chat google/gemini-flash-1.5 (002)                                    |      ----- |      ----- |      ----- | 89.57     |
+| vsegpt_chat google/gemini-pro-1.5 (002)                                      |      ----- |      ----- |      ----- | 89.55     |
 | multi_sources google_translate,deepl                                         |      89.66 |  **89.85** |       87.8 | 90.42     |
 | multi_sources google_translate,deepl,vsegpt_chat*                            |      89.66 |  **89.85** |      87.76 | 90.67     |
 | yandex_dev                                                                   |      ----- |      ----- |      87.34 | 90.27     |
