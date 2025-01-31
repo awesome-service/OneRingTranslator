@@ -11,6 +11,12 @@ module.exports = ({ appName = APP_NAME }) => ({
         message: ["uv pip install -r requirements.txt"],
       },
     },
+    {
+      method: "fs.link",
+      params: {
+        path: appName,
+      },
+    },
     //  Uncomment this step to add automatic venv deduplication (Experimental)
     {
       method: "fs.link",
